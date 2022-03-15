@@ -1,2 +1,4 @@
 name: Seraph the arch angel
 markdown: kramdown
+
+theme: jekyll-theme-slate
