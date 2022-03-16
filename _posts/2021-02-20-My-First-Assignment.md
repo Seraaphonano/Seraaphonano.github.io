@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Seraph the arch angel"
+title: "Information about me"
 date: 2021-02-20
 ---
 
