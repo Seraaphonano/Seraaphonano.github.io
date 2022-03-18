@@ -4,3 +4,12 @@ markdown: kramdown
 theme: jekyll-theme-slate
 
 permalink: /blog/:year/:month/:day/:title
+
+plugins:
+  - jekyll-postcss
+  
+exclude:
+  - "*.config.js"
+  - "package*.json"
+  - "assets"
+  - "node_modules"
