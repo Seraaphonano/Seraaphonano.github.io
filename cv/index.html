@@ -2,156 +2,185 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about-Seraph Jin</title>
+    <title>about-Zilong Jin</title>
     <!-- link to main stylesheet -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
   </head>
-  <body class="font-sans">
-    <nav class="bg-gradient-to-r from-cyan-500 to-blue-500  p-2 ">
-      <div class="text-gray-100 max-w-6xl mx-auto">
-        <div class="flex justify-between mx-8">
-          <!-- Home -->
-          <div class="">
-            <a href="/" class="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-                />
-              </svg>
-              <span>Home</span>
-            </a>
-          </div>
-          <!-- CV -->
-          <div class="hidden md:flex">
-            <a href="/cv" class="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
-                />
-              </svg>
-              <span>CV</span>
-            </a>
-          </div>
-          <!-- Projects -->
-          <div class="hidden md:flex">
-            <a href="/blog" class="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                />
-              </svg>
-              <span>Projects</span>
-            </a>
-          </div>
-          <!-- ABout  -->
-          <div class="hidden md:flex">
-            <a href="/about" class="flex items-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-55 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <span> About </span>
-            </a>
-          </div>
-		  <!-- button menu -->
-		  <div class="md:hidden flex items-center ">
-			  <button class="mobile-menu-button">
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-					<path fill-rule="evenodd" d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-				  </svg>
-			  </button>
-		  </div>
+  <body
+    class="bg-gradient-to-r from-red-200 to-blue-200 font-sans text antialiased font-medium"
+  >
+    <nav class="">
+      <div
+        class="flex justify-between p-2 border-b border-white/50 text-gray-500 text-center"
+      >
+        <div></div>
+        <div class="pl-5">
+          <a href="/">Home</a>
+        </div>
+        <!-- more button -->
+        <div>
+          <button class="collapse-menu-button">
+            <svg
+              t="1647800866889"
+              class="icon fill-gray-500"
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              p-id="7805"
+              width="30"
+              height="30"
+            >
+              <path
+                d="M500.8 604.779L267.307 371.392l-45.227 45.27 278.741 278.613L779.307 416.66l-45.248-45.248z"
+                p-id="7806"
+              ></path>
+            </svg>
+          </button >
         </div>
       </div>
-
-	  <!-- mobile menu -->
-	  <div class="mobile-collapse-menu hidden md:hidden text-white pt-2 ml-6 space-y-2">
-		<a href="/cv" class="block hover:bg-sky-900 flex items-center space-x-2">
-			<svg
-			  xmlns="http://www.w3.org/2000/svg"
-			  class="h-5 w-5"
-			  viewBox="0 0 20 20"
-			  fill="currentColor"
-			>
-			  <path
-				d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
-			  />
-			</svg>
-			<span>CV</span>
-		  </a>
-		  <a href="/blog" class="block hover:bg-sky-900 flex items-center space-x-2">
-			<svg
-			  xmlns="http://www.w3.org/2000/svg"
-			  class="h-5 w-5"
-			  fill="none"
-			  viewBox="0 0 24 24"
-			  stroke="currentColor"
-			  stroke-width="2"
-			>
-			  <path
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-			  />
-			</svg>
-			<span>Projects</span>
-		  </a>
-		  <a href="/about" class="block hover:bg-sky-900 flex items-center space-x-2">
-			<svg
-			  xmlns="http://www.w3.org/2000/svg"
-			  class="h-5 w-5"
-			  fill="none"
-			  viewBox="0 0 24 24"
-			  stroke="currentColor"
-			  stroke-width="2"
-			>
-			  <path
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-			  />
-			</svg>
-			<span> About </span>
-		  </a>
-	  </div>
+      <!-- collapse menu-->
+      <div class="collapse-menu hidden">
+        <div class="p-2 border-b border-white/50 text-gray-500 text-center">
+          <a href="/blog"> Projects </a>
+        </div>
+        <div class="p-2 border-b border-white/50 text-gray-500 text-center">
+          <a href="/about"> About </a>
+        </div>
+      </div>
     </nav>
+    <!-- Resume -->
+    <div class="flex justify-center mb-16">
+    <div class="text-gray-600 mt-5 w-96 ">
+      <div class="text-center text-2xl mb-4">Zilong(Seraph) Jin</div>
+      <div class="space-y-5">
+        <!-- Personal information -->
+        <div class="text-sm">
+          <p class="text-lg">Personal Information</p>
+          <div class="w-full border-t mb-2 border-gray-500"></div>
+          <div class="space-y-2">
+           <div> Name: Jin, Zilong &nbsp; &nbsp;&nbsp;</div>
+           <div> Given name: Seraph <br /></div>
+           <div> Nationality: Chinese <br /></div>
+           <div> Date of Birth: April 28, 1999 <br /></div>
+           <div> Personal Email: jingzilong88@gmail.com <br /></div>
+           <div> Mobile: +31 06 30314177 <br /></div>
+           <div> Address: Nijmegen, Gelderland</div>
+          </div>
+        </div>
+        <!-- Education -->
+        <div >
+          <p class="text-lg ">Education</p>
+          <div class="w-full border-t mb-2  border-gray-500"></div>
+            <table class="table-fixed text-sm space-y-2">
+          
+              <tbody >
+                <tr>
+                  <td>Bachelor Computing science - Radboud University
 
-	<script>
-		const btn = document.querySelector("button.mobile-menu-button")
-		const menu = document.querySelector(".mobile-collapse-menu")
-		btn.addEventListener("click", () =>{
-			menu.classList.toggle("hidden")
-		})
-	</script>
+                    <ul class="list-disc list-inside mb-2">
+                      <li> Specializations in Datascience and Software science</li>
+                      <!-- ... -->
+                    </ul>
+                  </td>
+                  
+                  <td class="w-20 text-center">2019-now</td>
+                </tr>
+                <tr>
+
+                <tr>
+                  <td>High school - Christian Liberty Academy</td>
+                 
+                  <td class="w-20 text-center">2014-2019</td>
+                </tr>
+                <tr>
+                  <td>Chuangchun Foreign Language School (China)</td>
+                 
+                  <td class="w-20 text-center">2011-2014</td>
+                </tr>
+              </tbody>
+            </table>
+
+          
+        </div>
+
+        <!-- Experience -->
+        <div>
+          <p class="text-lg">Experience</p>
+          <div class="w-full border-t mb-2 border-gray-500"></div>
+          <table class="table-fixed text-sm ">
+          
+            <tbody >
+              <tr>
+                <td>Giphouse Project with Yoast
+                  <ul class="list-disc list-inside mb-2">
+                    <li> work with Front-end (react and tailwind)</li>
+                    <!-- ... -->
+                  </ul>
+                </td>
+                
+                <td class="w-20 text-center">2022 Jan-July</td>
+              </tr>
+              <tr>
+              
+                <td>Bachelor Thesis Collaboration with Yoast
+                  <ul class="list-disc list-inside mb-2">
+                    <li> machine learning on formal and informal text classification</li>
+                    <!-- ... -->
+                  </ul>
+                </td>
+                <td class="w-20 text-center">2021 Aug-2022 Jan</td>
+                </tr>
+                <tr>
+                <td> International Student ambassador at Radboud University
+                  <ul class="list-disc list-inside mb-2">
+                    <li> Manage Radboud Social media account </li>
+                    <li>Host webinars and live streams to the prospective students</li>
+                    <li>International student vlogger</li>
+                    <!-- ... -->
+                  </ul>
+                </td>
+                <td class="w-20 text-center">2020 Sep - now</td>
+              </tr>
+              <tr>
+                <td>Chinese teacher at Suriname Chinese School</td>
+                <td class="w-20 text-center">2018 Apr - 2019 Aug </td>
+            
+              </tr>
+
+               
+            </tbody>
+          </table>
+
+        </div>
+        <!-- Skills -->
+        <div>
+          <p class="text-lg">Skills</p>
+          <div class="w-full border-t mb-2 border-gray-500"></div>
+          <ul class="list-disc list-inside mb-2 text-sm">
+            <li>programming skills: java, javascript, css, python, c++, scala, haskell </li>
+            <li>social media management, presentation, host webinars</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <p class="text-lg">Languages</p>
+            <div class="w-full border-t mb-2 border-gray-500"></div>
+            <div>
+              Chinese (native), English (Professional), Dutch (intermediate)
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <script>
+      const btn = document.querySelector("button.collapse-menu-button")
+      const menu = document.querySelector(".collapse-menu")
+      btn.addEventListener("click", () =>{
+        menu.classList.toggle("hidden")
+      })
+    </script>
+
   </body>
 </html>
