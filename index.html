@@ -1,48 +1,43 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>Home-Seraph Jin</title>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<!-- link to main stylesheet -->
-		<script src="https://cdn.tailwindcss.com"></script>
-			<!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
-		</head>
-		<body class="bg--50 shadow font-sans h-screen">
-			<nav class="font-bold bg-white border rounded m-2">
-	    		<ul class="flex justify-between p-2 text-white">
-	        		<li><a class="text-blue-600 hover:text-blue-800" href="/">Home</a></li>
-	        		<li><a class="text-blue-600 hover:text-blue-800" href="/cv">CV</a></li>
-	        		<li><a class="text-blue-600 hover:text-blue-800" href="/blog">Projects</a></li>
-					<li><a class="text-blue-600 hover:text-blue-800"  href="/about">About</a></li>
-	    		</ul>
-			</nav>
-			<div class="m-5 justify-bewteen">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about-Seraph Jin</title>
+    <!-- link to main stylesheet -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
+  </head>
+  <body class="font-sans">
+    <div class="h-screen grid md:grid-cols-2 md:divide-x">
+      <!-- Projects -->
+      <a href="/blog" class="flex bg-red-100">
+        <div href="/blog" class="m-auto">
+          <svg
+            t="1647790707213"
+            class="icon fill-blue-200"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="6747"
+            width="130"
+            height="130"
+          >
+            <path
+              d="M277.333333 298.666667v64h-64v106.666666h597.333334v-106.666666h-64v-64h64a64 64 0 0 1 64 64v426.666666a64 64 0 0 1-64 64H213.333333a64 64 0 0 1-64-64V362.666667a64 64 0 0 1 64-64h64z m533.333334 234.666666h-192v128H405.333333v-128h-192v256h597.333334V533.333333z m-256 0h-85.333334v64h85.333334v-64z m85.333333-384a64 64 0 0 1 64 64v149.333334H320v-149.333334a64 64 0 0 1 64-64h256z m0 64H384v85.333334h256v-85.333334z"
+              p-id="6748"
+            ></path>
+          </svg>
+          <div class="text-center text-blue-300 font-bold">Projects</div>
+        </div>
+      </a>
+      <!-- Profile -->
+      <a href="/about/" class="flex bg-blue-100">
+        <div class="m-auto">
+          <img class="w-32 h-32" src="./img/apple-emoji.png" alt="" />
 
-				<div class="justify-center flex">
-				<img class=" inline  object-cover w-64 h-64 mr-2 rounded-full" src="./img/seraph.jpeg" alt="Profile image"/>
-				<div class="p-10">
-					<p>Hi travelers, I'm Seraph!</p>
-					<p>I'm a computing science student from Radboud University.</p>
-					<p class=" mt-20 text-center flex">Explore around if you are interested!  
-					 <img class="inline  object-cover w-32 h-32 mr-2" src="./img/seraph-emo.png" >
-					</p>
-					</div>
-			</div>
-				
-					
-					
-					<!-- /.blurb -->
-			
-			</div><!-- /.container -->
-			<footer class="text-gray-500">
-	    		<ul class="flex justify-center">
-	        		<li class="mr-6"><a href="mailto:jingzilong88@gmail.com"><svg t="1647540405755" class="fill-blue-600" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2829" width="32" height="32"><path d="M513 583.8l448.5-448.5c-11.6-4.7-24.3-7.3-37.5-7.3H100c-12.7 0-24.9 2.4-36.1 6.7L513 583.8z" p-id="2830"></path><path d="M513 674.3L14.6 175.9C5.3 191.1 0 208.9 0 228v568c0 55.2 44.8 100 100 100h824c55.2 0 100-44.8 100-100V228c0-18.5-5.1-35.9-13.9-50.8L513 674.3z" p-id="2831"></path></svg></a></li>
-	        		<li><a href="https://github.com/Seraaphonano"> <svg t="1647540247529" class="fill-blue-600" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1727" width="32" height="32"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9 23.5 23.2 38.1 55.4 38.1 91v112.5c0.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z" p-id="1728"></path></svg></a></li>
-				</ul>
-			</footer>
-			
-			
-		</body>
-	</html>
-
-
+          <div class="text-center text-red-300 font-bold">About Seraph</div>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
