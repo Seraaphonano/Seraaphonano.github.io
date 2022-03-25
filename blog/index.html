@@ -1,68 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#b5cae7" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#636f80" media="(prefers-color-scheme: dark)">
-    <title>Projects-Seraph Jin</title>
-    <!-- link to main stylesheet -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
-  </head>
-  <body class=" bg-gradient-to-r from-red-200 to-blue-200 dark:bg-black font-sans text-gray-600 text-lg antialiased font-medium">
-    <nav class="">
-      <div
-        class="flex justify-between p-2 border-b border-white/50 text-gray-500 text-center"
-      >
-        <div></div>
-        <div class="pl-5">
-          <a href="/">Home</a>
-        </div>
-        <!-- more button -->
-        <div>
-          <button class="collapse-menu-button">
-            <svg
-              t="1647800866889"
-              class="icon fill-gray-500"
-              viewBox="0 0 1024 1024"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              p-id="7805"
-              width="30"
-              height="30"
-            >
-              <path
-                d="M500.8 604.779L267.307 371.392l-45.227 45.27 278.741 278.613L779.307 416.66l-45.248-45.248z"
-                p-id="7806"
-              ></path>
-            </svg>
-          </button >
-        </div>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#b5cae7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#636f80" media="(prefers-color-scheme: dark)">
+  <title>Projects-Seraph Jin</title>
+  <!-- link to main stylesheet -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
+</head>
+
+<body
+  class=" bg-gradient-to-r from-red-200 to-blue-200 dark:bg-black font-sans text-gray-600 text-lg antialiased font-medium">
+  <nav class="">
+    <div class="flex justify-between p-2 border-b border-white/50 text-gray-500 text-center">
+      <div></div>
+      <div class="pl-5">
+        <a href="/">Home</a>
       </div>
-      <!-- collapse menu-->
-      <div class="collapse-menu hidden ">
-        <div class=" p-2 border-b border-white/50 text-gray-500 text-center">
-          <a href="/about">About </a>
-        </div>
-        <div class="p-2 border-b border-white/50 text-gray-500 text-center">
-          <a href="/cv"> Curriculum vitae </a>
-        </div>
+      <!-- more button -->
+      <div>
+        <button class="collapse-menu-button">
+          <svg t="1647800866889" class="icon fill-gray-500" viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" p-id="7805" width="30" height="30">
+            <path d="M500.8 604.779L267.307 371.392l-45.227 45.27 278.741 278.613L779.307 416.66l-45.248-45.248z"
+              p-id="7806"></path>
+          </svg>
+        </button>
       </div>
-    </nav>
+    </div>
+    <!-- collapse menu-->
+    <div class="collapse-menu hidden ">
+      <div class=" p-2 border-b border-white/50 text-gray-500 text-center">
+        <a href="/about">About </a>
+      </div>
+      <div class="p-2 border-b border-white/50 text-gray-500 text-center">
+        <a href="/cv"> Curriculum vitae </a>
+      </div>
+    </div>
+  </nav>
+  <!-- Title -->
+  <div class="text-center text-gray-600 text-4xl font-bold m-4 ">Projects</div>
+  <div class="text-center text-gray-600 text-sm  m-4 ">click and read my projects and interets</div>
 
-	<div class="p-5">
-		List of projects in the form of blogs
+  <!-- Projects -->
+  <div class="flex justify-center text-gray-600 p-1 mt-4 mb-16">
 
-		
-		</div>
-	</div>
+    <div class="md:flex md:space-x-5">
+      <div class="text-gray-600 mt-5 w-96">
+        <!-- Read Your Days -->
+        <div class="h-auto rounded-xl bg-gradient-to-r from-red-100 to-blue-100 p-4 shadow-2xl  ">
+          <div class="flex justify-between px-4">
+            <div class="font-bold">Read Your Days</div>
+            <a href="/_posts/read-your-days.html" class="shadow border rounded-xl pb-1 font-bold hover:bg-blue-400 text-gray-100 px-2 bg-blue-300 text-center">open</a>
+          </div>
+          <div>
+      
+            <div class="text-sm text-gray-500 pl-4 py-3 ">
+              This is an android app that was developed during the course <span class="italic"> Research and Development</span>. The
+              aim of the app is to show lunar calendar along with other small functions in a minimalist way. 
+            </div>
+          </div>
+        </div>
 
-    <script>
-		const btn = document.querySelector("button.collapse-menu-button")
-		const menu = document.querySelector(".collapse-menu")
-		btn.addEventListener("click", () =>{
-		  menu.classList.toggle("hidden")
-		})
-	  </script>
-  </body>
+        
+      </div>
+      <div class="text-gray-600 mt-5 w-96">
+          <!-- BachelorThesis -->
+          <div class="h-auto rounded-xl bg-gradient-to-r from-red-100 to-blue-100 p-4 shadow-2xl  ">
+            <div class="flex justify-between px-4">
+              <div class="font-bold">Read Your Days</div>
+              <a href="/_posts/bachelor-thesis.html" class="shadow border rounded-xl pb-1 font-bold hover:bg-blue-400 text-gray-100 px-2 bg-blue-300 text-center">open</a>
+            </div>
+            <div>
+        
+              <div class="text-sm text-gray-500 pl-4 py-3 ">
+                This research was conducted for my Bachelor Thesis<span class="italic"> Classification and Interchange of
+                  Informal and Formal English Text</span>. During the research, we explore the potential of ML on text classification.
+              </div>
+            </div>
+          </div>
+        
+
+          
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    const btn = document.querySelector("button.collapse-menu-button")
+    const menu = document.querySelector(".collapse-menu")
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden")
+    })
+  </script>
+</body>
+
 </html>
