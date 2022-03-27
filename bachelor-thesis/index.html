@@ -11,7 +11,8 @@
   <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
 </head>
 
-<body class="bg-gradient-to-r from-red-200 to-blue-200 dark:from-[#254375] dark:via-[#7078a7] dark:to-[#c1a497]  font-sans text antialiased font-medium">
+<body
+  class="bg-gradient-to-r from-red-200 to-blue-200 dark:from-[#254375] dark:via-[#7078a7] dark:to-[#c1a497]  font-sans text antialiased font-medium">
   <nav class="">
     <div class="flex justify-between p-2 border-b border-white/50 text-gray-500 dark:text-gray-200 text-center">
       <div></div>
@@ -43,7 +44,8 @@
   <div class="text-gray-700 mx-auto mt-10 px-4 pb-28 sm:mt-16 sm:px-6 md:px-8 xl:px-12 xl:max-w-6xl">
 
     <article class="relative max-w-3xl mx-auto xl:max-w-none xl:grid xl:grid-cols-[1fr_50rem] xl:gap-x-8 ">
-      <h1 class="col-span-full text-3xl sm:text-4xl sm:text-center xl:mb-16 font-extrabold mb-4 dark:text-gray-100">Classification and Interchange of Informal and Formal English Text</h1>
+      <h1 class="col-span-full text-3xl sm:text-4xl sm:text-center xl:mb-16 font-extrabold mb-4 dark:text-gray-100">
+        Classification and Interchange of Informal and Formal English Text</h1>
       <div class="text-sm leading-6 mb-6 xl:mb-0 text-gray-600">
         <div class="hidden mb-5 pb-5 border-b border-slate-200 xl:block ">
           <a class="h-auto hover:from-red-200 hover:to-blue-200 rounded-xl  bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30  p-4 shadow-2xl   flex font-semibold space-x-2"
@@ -62,21 +64,96 @@
         <div
           class="xl:flex xl:flex-col font-medium rounded-xl dark:text-gray-200 text-gray-500  bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30  p-4 shadow-2xl  mb-5 sm:flex sm:flex-wrap sm:justify-center xl:block">
           <span>Author: Seraph Jin &nbsp;</span>
-          <span>Supervisors: prof. dr. ir. A.P. de vries  &nbsp;</span>
+          <span>Supervisors: prof. dr. ir. A.P. de vries &nbsp;</span>
           <span>Second supervisor: Agnieszka Szuba </span>
         </div>
       </div>
       <!-- main article -->
-      <div class="h-auto text-gray-600 space-y-6 dark:text-gray-100 rounded-xl  bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30  p-4 shadow-2xl  ">
-        <p class=" ">This is the first paragraph of introduction</p>
-        <p>Paragraph 1 function one</p>
-        <p>Paragraph 2 function two</p>
-        <p>Paragraph 3 function </p>
+      <div
+        class="h-auto text-gray-600 space-y-6 dark:text-gray-100 rounded-xl  bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30  p-4 shadow-2xl  ">
+        <p class=" ">The purpose of text categorization [1] is to classify text documents into different pre-
+          defined classes. There is little published research into the classification of formal and
+          informal (English) text. A systematic study on text formality classification is missing
+          from the literature so far. The most relevant work about formal and informal text classification is done by
+          Fadi Abu Sheikha and Diana Inkpen [2]. They classify formal and
+          informal documents based on the features extracted from the data sets. Some short-
+          comings of their research are discussed in the following paragraph. Based on analysis
+          and our critical review of this research, we extend the binary classification model from
+          the fore-mentioned research to a multi-class classification model. Instead of predicting
+          a document as either formal or informal, we also work on a model that can predict
+          the formality of a document on a scale from one to three, with degree one being very
+          informal, two being semi-formal/informal, and degree three as very formal. In the end,
+          we discuss which key factors contribute to the formality or informality of a text and
+          provide some ideas or solutions to change the text style. Our objective is to achieve a
+          sustainable and replicable model with a high accuracy with the flexibility to extend it
+          for the future research.</p>
+        <p>
+          The prior research [2] do not disclose the exact algorithm they used, and they extract
+          the feature using Connexor parser [3] which is not convenient to use locally. The data
+          sets used in the research are not optimal and inconsistent. For example, in the Enron
+          email dataset, even though emails are usually informal in the setting of normal life, many
+          emails in the Enron data sets are quite formal, as expected from a former huge company. Some of the data sets
+          they used include annotations that are difficult to cleanse
+          manually. The rest of the data sets are adequate for the classification, and we also use
+          some of them in our heterogeneous dataset. </p>
+        <p> This research improves on the prior study and provide an implementation of the text
+          classification models to assist Yoast for their future development in that field. Yoast [4]
+          provides a SEO (search engine optimization) plugin for Wordpress and other other simi-
+          lar platforms, which has been used across millions of websites. The function of the SEO
+          plugin is to help users achieve a high position in search engine results. This includes offering feedback and
+          suggestions for improvements to the content of their websites. In this
+          paper, we focus on the formality side of writing since the styles of writing can influence
+          the readers’ attitude towards the content. For example, when reading a fun story, one
+          would expect the creator to make use of abbreviation, slang, colloquial language,etc.. On
+          the other hand, in a newspaper, readers like to see more formal and serious text to build
+          trust in the content of the newspaper. Since text formality and informality contribute
+          greatly to the content of its users, Yoast would like to make the informal and formal
+          classification a tool to assist the process of content creation. This thesis starts with
+          a replication of the text formality classification method from the research [2] done by
+          Fadi Abu Sheikha and Diana Inkpen. Afterwards, we extend the research to multi-class
+          classification on heterogeneous datasets. The concept of the models is well structured
+          to allow for modifications and follow-up research in the future.
+        </p>
+        <p> Following [2], we extract features from each document and quantify the features as numerals. After the
+          desired features for each documents are extracted, we train and verify
+          the model with stratified k-fold cross validation. Afterwards, we examine the features
+          to see which (subset of) features are essential when distinguishing formal and informal
+          texts with a recursive feature selection method.</p>
+        <p>
+          In the discussion section we compare several kinds of classifiers (Decision tree classifier,
+          logistic regression classifier and random forest) in the experiment, analyze and discuss
+          the classifiers based on two different datasets, and implement the mock-up classification
+          algorithms. The choices made for the classifiers are limited by the JavaScript implementation. For decision
+          tree model, we only need to distinguish different documents
+          according to the feature splitting suggested by the decision tree model. In other words,
+          the decision tree result could be utilized to create a rule-based algorithm. For logistic
+          regression, we could apply the weight and bias to the features and get an approximate
+          result to determine the type of document. In the end, we also discuss what makes
+          documents formal and informal and how to interchange them.</p>
+      
+        <p>The GitHub repository for this project can be found <a class="underline rounded p-2 hover:border "
+            href="https://github.com/Seraaphonano/formal_and_informal_english_classification">here</a>. </p>
         <div>
-        <a class="underline hover:border" href="/downloads/bachelor-thesis.pdf">Link to download the pdf page</a>
+          <a class="underline hover:border p-2 rounded" href="/downloads/bachelor-thesis.pdf">Link to download the pdf page</a>
+        </div>
       </div>
+      <div
+        class="h-auto text-gray-600 dark:text-gray-100 rounded-xl space-y-4  bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30 mt-8 p-4 shadow-2xl  ">
+        <p> [1] V. K. Vijayan, K. R. Bindu, and L. Parameswaran, “A comprehensive study of
+          text classification algorithms,” in 2017 International Conference on Advances in
+          Computing, Communications and Informatics (ICACCI), 2017, pp. 1109–1113.
+        </p>
+        <p>[2] F. Abu Sheikha and D. Inkpen, “Automatic classification of documents by for-
+          mality,” inProceedings of the 6th International Conference on Natural Language
+          Processing and Knowledge Engineering(NLPKE-2010), 2010, pp. 1–5.
+        </p>
+        <p>[3] P. B. Fuß, , A. Kurczewska, S. Dyka, R. Mitkov, I. I. Siitonen, , K. K.
+          Ruokolainen, , A. H. Tiedemann, , and J. X. Huang. [Online]. Available:
+          http://www.connexor.com/
+        </p>
+        <p> [4] T. Yoast, “Yoastseo,” Dec 2021. [Online]. Available: https://wordpress.org/
+          plugins/wordpress-seo/</p>
       </div>
-
     </article>
   </div>
 
